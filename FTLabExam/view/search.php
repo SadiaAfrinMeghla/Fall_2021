@@ -18,7 +18,7 @@ function showmyuser() {
 		 document.getElementById("mytext").innerHTML = this.status;
 	}
   };
-  xhttp.open("POST", "/FTLabExam/control/getUser.php", true);
+  xhttp.open("POST", "/FTLabExam/control/User.php", true);
   xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
   xhttp.send("uname="+uname+"&uinterest="+uinterest+"&udesignation="+udesignation);
 }
